@@ -1,0 +1,20 @@
+{
+  "name": "maurokart",
+  "version": "1.0.0",
+  "description": "Node project for replacating Mario Kart game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "echo \"Up\" && exit 1"
+  },
+  "keywords": [
+    "game",
+    "node",
+    "kart"
+  ],
+  "author": "Mauro Imamura",
+  "license": "ISC",
+  "dependencies": {
+    "maurokart": "file:"
+  }
+}
