@@ -17,7 +17,7 @@ class character{
     }
 
     async calculateAttribute(attribute, diceValue) {
-        if (attributes.includes(attribute)) {
+        if (Object.values(attributes).includes(attribute)) {
             return this[attribute] + diceValue;
         } else {
             throw new Error("Invalid attribute. Must be 'velocity', 'maneuverability', or 'power'.");
@@ -25,7 +25,7 @@ class character{
     }
 
     async updatePoints(value){
-        this.points + value <= 0 ? this.points += value : this.points;
+        this.points + value <= 0 ? this.points : this.points += value;
     }
 }
 

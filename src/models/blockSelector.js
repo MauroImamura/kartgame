@@ -1,8 +1,10 @@
-import blocks from "./enums/blocks";
+import blocks from "./enums/blocks.js";
 
-class blockSelector{
+class blockSelector {
     static async getRandomBlock() {    
-        return blocks[Math.floor(Math.random()*Object.keys(blocks).length)];
+        const blockValues = Object.values(blocks); // Get an array of block values
+        const randomIndex = Math.floor(Math.random() * blockValues.length);
+        return blockValues[randomIndex];
     }
 }
 
